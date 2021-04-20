@@ -1,0 +1,49 @@
+{
+  "name": "@venomswap/sdk-extra",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "🛠 A specific SDK/toolkit for building applications on top of VenomSwap.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": "https://github.com/VenomProtocol/venomswap-sdk-extra.git",
+  "keywords": [
+    "ethereum",
+    "bsc",
+    "harmony",
+    "venomswap"
+  ],
+  "module": "dist/sdk.esm.js",
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "prepublishOnly": "tsdx build"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.1.0",
+    "@ethersproject/contracts": "^5.1.1",
+    "@ethersproject/providers": "^5.1.2",
+    "@ethersproject/solidity": "^5.1.0",
+    "@types/lodash.random": "^3.2.6",
+    "@venomswap/community-token-list": "^1.3.0",
+    "@venomswap/default-token-list": "^1.8.5",
+    "@venomswap/sdk": "^1.0.4",
+    "lodash.random": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "tsdx": "^0.12.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true
+  }
+}
