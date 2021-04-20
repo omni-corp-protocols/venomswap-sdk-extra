@@ -16,7 +16,7 @@ export class Tokens {
     chainId?: ChainId,
     tokens = [...DEFAULT_TOKEN_LIST.tokens, ...COMMUNITY_TOKEN_LIST.tokens]
   ): Token[] | undefined {
-    let parsedTokens: Token[] | undefined = this.convertToSDKTokens(tokens)
+    let parsedTokens: Token[] | undefined = this.convertTokens(tokens)
 
     if (!parsedTokens || parsedTokens.length == 0) {
       return undefined
@@ -53,18 +53,30 @@ export class Tokens {
     return this.find(tokens, key, value)?.[0]
   }
   
-  public static convertToSDKTokens(tokens: TokenListToken[]): Token[] {
+  public static convertTokens(tokens: TokenListToken[]): Token[] {
     const sdkTokens: Token[] = []
   
     for (const token of tokens) {
-      const sdkToken = this.convertToSDKToken(token)
+      const sdkToken = this.convertToken(token)
       sdkTokens.push(sdkToken)
     }
   
     return sdkTokens
   }
   
-  public static convertToSDKToken(token: TokenListToken): Token {
+  public static convertToken(token: TokenListToken): Token {
     return new Token(token.chainId, token.address, token.decimals, token.symbol, token.name)
   }
+}
+
+export const TOKENS: { [chainId in ChainId]: Token[] | undefined } = {
+  [ChainId.MAINNET]: Tokens.all(ChainId.MAINNET),
+  [ChainId.ROPSTEN]: Tokens.all(ChainId.ROPSTEN),
+  [ChainId.RINKEBY]: Tokens.all(ChainId.RINKEBY),
+  [ChainId.GÖRLI]: Tokens.all(ChainId.GÖRLI),
+  [ChainId.KOVAN]: Tokens.all(ChainId.KOVAN),
+  [ChainId.BSC_MAINNET]: Tokens.all(ChainId.BSC_MAINNET),
+  [ChainId.BSC_TESTNET]: Tokens.all(ChainId.BSC_TESTNET),
+  [ChainId.HARMONY_MAINNET]: Tokens.all(ChainId.HARMONY_MAINNET),
+  [ChainId.HARMONY_TESTNET]: Tokens.all(ChainId.HARMONY_TESTNET),
 }
