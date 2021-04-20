@@ -1,6 +1,6 @@
 import DEFAULT_TOKEN_LIST from '@venomswap/default-token-list'
 import COMMUNITY_TOKEN_LIST from '@venomswap/community-token-list'
-import { Token } from '@venomswap/sdk'
+import { ChainId, Token } from '@venomswap/sdk'
 
 export interface TokenListToken {
   chainId: number
@@ -11,19 +11,27 @@ export interface TokenListToken {
   logoURI: string
 }
 
-export class TokenUtility {
-  public static all(chainId: number | undefined): Token[] | undefined {
-    if (!chainId) return undefined
-  
-    const defaultTokens = DEFAULT_TOKEN_LIST.tokens.filter((token: any) => token.chainId == chainId)
-    const communityTokens = COMMUNITY_TOKEN_LIST.tokens.filter((token: any) => token.chainId == chainId)
-    const matchingTokens = [...defaultTokens, ...communityTokens]
-  
-    if (!matchingTokens || matchingTokens.length == 0) {
+export class Tokens {
+  public static all(
+    chainId?: ChainId,
+    tokens = [...DEFAULT_TOKEN_LIST.tokens, ...COMMUNITY_TOKEN_LIST.tokens]
+  ): Token[] | undefined {
+    let parsedTokens: Token[] | undefined = this.convertToSDKTokens(tokens)
+
+    if (!parsedTokens || parsedTokens.length == 0) {
       return undefined
     }
+
+    if (chainId) {
+      parsedTokens = this.byChainId(parsedTokens, chainId)
+    }
   
-    return this.converToSDKTokens(matchingTokens)
+    return parsedTokens
+  }
+
+  public static byChainId(tokens: Token[] | undefined, chainId: ChainId): Token[] | undefined {
+    if (chainId === undefined || tokens === undefined) return undefined
+    return tokens.filter((token: Token) => token.chainId == chainId)
   }
 
   public static find(tokens: Token[] | undefined, key: string, value: string): Token[] | undefined {
@@ -45,7 +53,7 @@ export class TokenUtility {
     return this.find(tokens, key, value)?.[0]
   }
   
-  public static converToSDKTokens(tokens: TokenListToken[]): Token[] {
+  public static convertToSDKTokens(tokens: TokenListToken[]): Token[] {
     const sdkTokens: Token[] = []
   
     for (const token of tokens) {
