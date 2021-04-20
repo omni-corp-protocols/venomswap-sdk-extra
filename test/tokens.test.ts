@@ -5,12 +5,12 @@ describe('Tokens', () => {
 
   describe('Without specifying a chain id', () => {
     it('can correctly parse tokens from token lists', () => {
-      const tokens = Tokens.all()
+      const tokens = new Tokens().tokens
       expect(tokens?.length).toBeGreaterThan(0)
     })
 
     it('can correctly parse token details', () => {
-      const tokens = Tokens.all()
+      const tokens = new Tokens().tokens
       const token = tokens?.[0]
       expect(token).toBeInstanceOf(Token)
       expect(token?.name).toEqual('Cardano Token')
@@ -21,8 +21,7 @@ describe('Tokens', () => {
     })
   
     it('can correctly find a token by its symbol', () => {
-      const tokens = Tokens.all()
-      const token = Tokens.first(tokens, 'symbol', 'LINK')
+      const token = new Tokens().firstBySymbol('LINK')
       expect(token).toBeInstanceOf(Token)
       expect(token?.name).toEqual('ChainLink Token')
       expect(token?.symbol).toEqual('LINK')
@@ -32,21 +31,20 @@ describe('Tokens', () => {
     })
 
     it('can correctly find all tokens matching a specific symbol', () => {
-      const tokens = Tokens.all()
-      const busdTokens = Tokens.find(tokens, 'symbol', 'BUSD')
+      const busdTokens = new Tokens().bySymbol('BUSD')
       expect(busdTokens).toBeInstanceOf(Array)
       expect(busdTokens).toHaveLength(3)
     })
   })
 
-  describe('Specifying a chain id', () => {
+  describe.only('Specifying a chain id', () => {
     it('can correctly parse tokens from token lists with a specified chain id', () => {
-      const tokens = Tokens.all(ChainId.HARMONY_MAINNET)
+      const tokens = new Tokens(ChainId.HARMONY_MAINNET).tokens
       expect(tokens?.length).toBeGreaterThan(0)
     })
 
     it('can correctly parse token details', () => {
-      const tokens = Tokens.all(ChainId.HARMONY_MAINNET)
+      const tokens = new Tokens(ChainId.HARMONY_MAINNET).tokens
       const token = tokens?.[0]
       expect(token).toBeInstanceOf(Token)
       expect(token?.name).toEqual('1INCH Token')
@@ -57,8 +55,7 @@ describe('Tokens', () => {
     })
   
     it('can correctly find a token by its symbol', () => {
-      const tokens = Tokens.all(ChainId.HARMONY_MAINNET)
-      const token = Tokens.first(tokens, 'symbol', 'LINK')
+      const token = new Tokens(ChainId.HARMONY_MAINNET).firstBySymbol('LINK')
       expect(token).toBeInstanceOf(Token)
       expect(token?.name).toEqual('ChainLink Token')
       expect(token?.symbol).toEqual('LINK')
@@ -68,8 +65,7 @@ describe('Tokens', () => {
     })
 
     it('correctly only identifies one instance of a token per chain id', () => {
-      const tokens = Tokens.all(ChainId.HARMONY_MAINNET)
-      const busdTokens = Tokens.find(tokens, 'symbol', 'BUSD')
+      const busdTokens = new Tokens(ChainId.HARMONY_MAINNET).bySymbol('BUSD')
       expect(busdTokens).toBeInstanceOf(Array)
       expect(busdTokens).toHaveLength(1)
     })
@@ -77,12 +73,12 @@ describe('Tokens', () => {
 
   describe('Using TOKENS constant', () => {
     it('can correctly parse tokens from token lists with a specified chain id', () => {
-      const tokens = TOKENS[ChainId.HARMONY_MAINNET]
+      const tokens = TOKENS[ChainId.HARMONY_MAINNET].tokens
       expect(tokens?.length).toBeGreaterThan(0)
     })
 
     it('can correctly parse token details', () => {
-      const tokens = TOKENS[ChainId.HARMONY_MAINNET]
+      const tokens = TOKENS[ChainId.HARMONY_MAINNET].tokens
       const token = tokens?.[0]
       expect(token).toBeInstanceOf(Token)
       expect(token?.name).toEqual('1INCH Token')
@@ -93,8 +89,7 @@ describe('Tokens', () => {
     })
   
     it('can correctly find a token by its symbol', () => {
-      const tokens = TOKENS[ChainId.HARMONY_MAINNET]
-      const token = Tokens.first(tokens, 'symbol', 'LINK')
+      const token = TOKENS[ChainId.HARMONY_MAINNET].firstBySymbol('LINK')
       expect(token).toBeInstanceOf(Token)
       expect(token?.name).toEqual('ChainLink Token')
       expect(token?.symbol).toEqual('LINK')
@@ -104,8 +99,7 @@ describe('Tokens', () => {
     })
 
     it('correctly only identifies one instance of a token per chain id', () => {
-      const tokens = TOKENS[ChainId.HARMONY_MAINNET]
-      const busdTokens = Tokens.find(tokens, 'symbol', 'BUSD')
+      const busdTokens = TOKENS[ChainId.HARMONY_MAINNET].bySymbol('BUSD')
       expect(busdTokens).toBeInstanceOf(Array)
       expect(busdTokens).toHaveLength(1)
     })

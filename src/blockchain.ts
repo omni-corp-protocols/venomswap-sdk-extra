@@ -23,7 +23,7 @@ export class BlockchainSettings {
   blockTime?: number
   currency?: Currency
   
-  constructor(chainId: number, blockchain?: Blockchain, name?: string, rpcURLs?: string[], rpcAPIKey?: string, explorerURL?: string, blockTime?: number) {
+  constructor(chainId: ChainId, blockchain?: Blockchain, name?: string, rpcURLs?: string[], rpcAPIKey?: string, explorerURL?: string, blockTime?: number) {
     this.chainId = chainId
     this.rpcAPIKey = rpcAPIKey
 
