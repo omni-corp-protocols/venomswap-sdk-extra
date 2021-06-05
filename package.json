@@ -29,8 +29,8 @@
     "@ethersproject/providers": "^5.1.2",
     "@ethersproject/solidity": "^5.1.0",
     "@types/lodash.random": "^3.2.6",
-    "@venomswap/community-token-list": "^1.4.5",
-    "@venomswap/default-token-list": "^2.0.0",
+    "@venomswap/community-token-list": "^1.6.0",
+    "@venomswap/default-token-list": "^2.2.0",
     "@venomswap/sdk": "^1.0.4",
     "lodash.random": "^3.2.0"
   },
