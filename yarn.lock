@@ -1646,7 +1646,7 @@
   resolved "https://registry.yarnpkg.com/@venomswap/default-token-list/-/default-token-list-3.0.0.tgz#e139e3a7a1e1fa0d28d38520f9f8dc06a47a1d6a"
   integrity sha512-lsUWbCLKEA9e4mNA+YilAlM9FIAfVBuW0u5Ep6obX516qA6zg0Ky6Rs4MKW3feA3V4+30g9GOFhrDukrqo+UAw==
 
-"@venomswap/sdk@^1.0.5":
+"@venomswap/sdk@^1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@venomswap/sdk/-/sdk-1.0.6.tgz#15fe63fd294110465e9fd492e12a6cf84772c681"
   integrity sha512-AwF6ijD7AIjBmKLaghykxhvf1yIr8WOx9KXcsY95YXziDu5Fc+ysIWxjgF5k6nPeI7PpuaPNlyArBU/EEmVENw==
