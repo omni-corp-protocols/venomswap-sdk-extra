@@ -1545,9 +1545,9 @@
   integrity sha512-7eQ2xYLLI/LsicL2nejW9Wyko3lcpN6O/z0ZLHrEQsg280zIdCv1t/0m6UtBjUHokCGBQ3gYTbHzDkZ1xOBwwg==
 
 "@types/node@*":
-  version "16.3.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.2.tgz#655432817f83b51ac869c2d51dd8305fb8342e16"
-  integrity sha512-jJs9ErFLP403I+hMLGnqDRWT0RYKSvArxuBVh2veudHV7ifEC1WAmjJADacZ7mRbA2nWgHtn8xyECMAot0SkAw==
+  version "16.3.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.3.tgz#0c30adff37bbbc7a50eb9b58fae2a504d0d88038"
+  integrity sha512-8h7k1YgQKxKXWckzFCMfsIwn0Y61UK6tlD6y2lOb3hTOIMlK3t9/QwHOhc81TwU+RMf0As5fj7NPjroERCnejQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1641,10 +1641,10 @@
   resolved "https://registry.yarnpkg.com/@venomswap/core/-/core-1.0.0.tgz#f1336702e8ecce6b79b06212220da43a34b3749c"
   integrity sha512-cd4+e5KKH7QmSjMhe50lty35eHuZVTh9YYnkWPdQPe6KG3R5P5JE3LFliwNLpuV4jWEYYRlEa3OaG3ie+BlYrg==
 
-"@venomswap/default-token-list@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@venomswap/default-token-list/-/default-token-list-3.3.0.tgz#8dea6421cd3b06b285fa9de121d7f4b4c49d4d09"
-  integrity sha512-91Cxqfcl0QAZPpYd5L6wYNfFYzfb/gJmCjSMSrGFkpGJoXSVq9lVc/sVRt6h2jgrXI/if+DcDG4HoGk+MgytGg==
+"@venomswap/default-token-list@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@venomswap/default-token-list/-/default-token-list-3.4.0.tgz#6089195d5c594cf85604f1f26d430b5b276126c8"
+  integrity sha512-Z7HRazPhNbGXVND0hzKlKaESQP5lFodJdvXtq3ZKY5/IoWUzpAi0BZFX7IsR9B6zjKktM01cmPaR71qIoAT7Tg==
 
 "@venomswap/sdk@^1.0.6":
   version "1.0.6"
@@ -2610,9 +2610,9 @@ ecc-jsbn@~0.1.1:
     safer-buffer "^2.1.0"
 
 electron-to-chromium@^1.3.723:
-  version "1.3.778"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.778.tgz#bf01048736c95b78f2988e88005e0ebb385942a4"
-  integrity sha512-Lw04qJaPtWdq0d7qKHJTgkam+FhFi3hm/scf1EyqJWdjO3ZIGUJhNmZJRXWb7yb/bRYXQyVGSpa9RqVpjjWMQw==
+  version "1.3.779"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.779.tgz#de55492a756deec63424f89fbe62aec9776f0e6d"
+  integrity sha512-nreave0y/1Qhmo8XtO6C/LpawNyC6U26+q7d814/e+tIqUK073pM+4xW7WUXyqCRa5K4wdxHmNMBAi8ap9nEew==
 
 elliptic@6.5.4:
   version "6.5.4"
