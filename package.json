@@ -1,7 +1,7 @@
 {
   "name": "@venomswap/sdk-extra",
   "license": "MIT",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "🛠 A specific SDK/toolkit for building applications on top of VenomSwap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -31,7 +31,7 @@
     "@types/lodash.random": "^3.2.6",
     "@venomswap/community-token-list": "^2.1.0",
     "@venomswap/default-token-list": "^3.4.0",
-    "@venomswap/sdk": "^1.0.6",
+    "@venomswap/sdk": "^1.0.7",
     "lodash.random": "^3.2.0"
   },
   "devDependencies": {
