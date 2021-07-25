@@ -1641,15 +1641,15 @@
   resolved "https://registry.yarnpkg.com/@venomswap/core/-/core-1.0.0.tgz#f1336702e8ecce6b79b06212220da43a34b3749c"
   integrity sha512-cd4+e5KKH7QmSjMhe50lty35eHuZVTh9YYnkWPdQPe6KG3R5P5JE3LFliwNLpuV4jWEYYRlEa3OaG3ie+BlYrg==
 
-"@venomswap/default-token-list@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@venomswap/default-token-list/-/default-token-list-3.5.0.tgz#81ff03c63c2ab63a74a073648611270b7356ba42"
-  integrity sha512-xqoJuBFjlJa2SxV5VLsAXLI+MiaCeyweYXGaKFoVgrnw6IlcSBpUdfzp8UW9UPvSN4FakSy4xmSTnrD5WtmdMw==
+"@venomswap/default-token-list@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@venomswap/default-token-list/-/default-token-list-3.6.0.tgz#0d12a8d3beb747d030982fcf6bc72f8d9a1448aa"
+  integrity sha512-/5wLqT24nHHmdwOGUDgJLG9uQTQjG1Zy7wffwI6k6xF1/VGsF8z25qK1LWTTXvbGB0hh2CfMd9AP0Yj97UaXRA==
 
-"@venomswap/sdk@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@venomswap/sdk/-/sdk-1.0.8.tgz#84552a9cb671adf83f51db37c6f804c527fcd57f"
-  integrity sha512-xhHtpWVBnSQOiXeXxiaN2YYGUFi3dcERgofDIHVSWPs/fMSvFOuFw0w9GLgzSXfHRmYXtdQLSH3glbXIkkCM7A==
+"@venomswap/sdk@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@venomswap/sdk/-/sdk-1.0.9.tgz#4a0806b296cc818bac49963152bb8ee6312db0c4"
+  integrity sha512-LSXSQwVq+1V5E87ib6gDacoHDYqI/iumlWall8zHxIQmLIvFbscKyO26mmIks2C0dc3kPTD+h7PwcqB39seLYA==
   dependencies:
     "@venomswap/core" "^1.0.0"
     big.js "^6.1.1"
