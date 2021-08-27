@@ -1646,10 +1646,10 @@
   resolved "https://registry.yarnpkg.com/@venomswap/core/-/core-1.0.0.tgz#f1336702e8ecce6b79b06212220da43a34b3749c"
   integrity sha512-cd4+e5KKH7QmSjMhe50lty35eHuZVTh9YYnkWPdQPe6KG3R5P5JE3LFliwNLpuV4jWEYYRlEa3OaG3ie+BlYrg==
 
-"@venomswap/default-token-list@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@venomswap/default-token-list/-/default-token-list-4.3.0.tgz#f5b1f51a2bfeef2667f3a4dcab41014cd4c63034"
-  integrity sha512-Is7dxTvau+3yDEVbXpRhnNf1/a3tvKqz2NJm3yw09lqsVriRMXRNfSHSMDazo9FGFzZ5VcdxiHDv/e+AZTw8LQ==
+"@venomswap/default-token-list@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@venomswap/default-token-list/-/default-token-list-4.4.0.tgz#de1d1b734dba3ee54525fbe844b2c11d3afd8886"
+  integrity sha512-9+zlt8o/hvBuRmc7+scGPEqb8k6bU0tlO9NASmiKfYt8XMfvcIJzeqzTwNxffMUGoYNofRN/YIb9tohsj3bUtQ==
 
 "@venomswap/sdk@^1.1.2":
   version "1.1.2"
@@ -2615,9 +2615,9 @@ ecc-jsbn@~0.1.1:
     safer-buffer "^2.1.0"
 
 electron-to-chromium@^1.3.811:
-  version "1.3.818"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.818.tgz#32ed024fa8316e5d469c96eecbea7d2463d80085"
-  integrity sha512-c/Z9gIr+jDZAR9q+mn40hEc1NharBT+8ejkarjbCDnBNFviI6hvcC5j2ezkAXru//bTnQp5n6iPi0JA83Tla1Q==
+  version "1.3.820"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.820.tgz#3b2672b59ed17847ed19f1281547f37bbfda87bb"
+  integrity sha512-5cFwDmo2yzEA9hn55KZ9+cX/b6DSFvpKz8Hb2fiDmriXWB+DBoXKXmncQwNRFBBTlUdsvPHCoy594OoMLAO0Tg==
 
 elliptic@6.5.4:
   version "6.5.4"
