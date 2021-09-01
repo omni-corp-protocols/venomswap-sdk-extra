@@ -9,9 +9,9 @@ describe('BlockchainSettings', () => {
     expect(settings.blockchain).toEqual(Blockchain.HARMONY)
     expect(settings.name).toEqual('Harmony Mainnet')
     expect(settings.rpcURLs).toHaveLength(3)
-    expect(settings.rpcURLs?.[0]).toEqual('https://api.s0.t.hmny.io/')
+    expect(settings.rpcURLs?.[0]).toEqual('https://api.harmony.one/')
     expect(settings.rpcAPIKey).toBeUndefined()
-    expect(settings.explorerURL).toEqual('https://explorer.harmony.one/#/')
+    expect(settings.explorerURL).toEqual('https://explorer.harmony.one/')
     expect(settings.blockTime).toEqual(2)
     expect(settings.randomRpcURL()).not.toBeUndefined()
 

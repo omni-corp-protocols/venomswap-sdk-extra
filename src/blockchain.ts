@@ -128,8 +128,8 @@ export class BlockchainSettings {
           break
         case 1666600000:
           this.rpcURLs = [
-            'https://api.s0.t.hmny.io/',
             'https://api.harmony.one/',
+            'https://api.s0.t.hmny.io/',
             'https://a.api.s0.t.hmny.io/'
           ]
           break
@@ -169,10 +169,10 @@ export class BlockchainSettings {
           this.explorerURL = 'https://testnet.bscscan.com/'
           break
         case 1666600000:
-          this.explorerURL = 'https://explorer.harmony.one/#/'
+          this.explorerURL = 'https://explorer.harmony.one/'
           break
         case 1666700000:
-          this.explorerURL = 'https://explorer.testnet.harmony.one/#/'
+          this.explorerURL = 'https://explorer.testnet.harmony.one/'
           break
         default:
           this.explorerURL = 'https://etherscan.io/'
