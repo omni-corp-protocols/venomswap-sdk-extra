@@ -6,7 +6,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var sdk = require('@venomswap/sdk');
 var random = _interopDefault(require('lodash.random'));
-var DEFAULT_TOKEN_LIST = _interopDefault(require('@venomswap/default-token-list'));
+var DEFAULT_TOKEN_LIST = _interopDefault(require('@omniswap/default-token-list'));
 var COMMUNITY_TOKEN_LIST = _interopDefault(require('@venomswap/community-token-list'));
 
 var _BLOCKCHAIN_SETTINGS;

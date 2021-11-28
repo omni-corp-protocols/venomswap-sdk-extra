@@ -1,4 +1,4 @@
-import DEFAULT_TOKEN_LIST from '@venomswap/default-token-list'
+import DEFAULT_TOKEN_LIST from '@omniswap/default-token-list'
 import COMMUNITY_TOKEN_LIST from '@venomswap/community-token-list'
 import { ChainId, Token } from '@venomswap/sdk'
 

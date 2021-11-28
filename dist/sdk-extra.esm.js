@@ -1,6 +1,6 @@
 import { ETHER, HARMONY, BINANCE_COIN, ChainId, Token } from '@venomswap/sdk';
 import random from 'lodash.random';
-import DEFAULT_TOKEN_LIST from '@venomswap/default-token-list';
+import DEFAULT_TOKEN_LIST from '@omniswap/default-token-list';
 import COMMUNITY_TOKEN_LIST from '@venomswap/community-token-list';
 
 var _BLOCKCHAIN_SETTINGS;
